@@ -1,1 +1,56 @@
-Hello
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width">
+	<title>NDruce Image Optimizer</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css">
+	<link rel="stylesheet" href="../optimg/assets/css/style.css" type="text/css">
+</head>
+<body>
+	<div class="container margin-top">
+		<h1>NDruce Image Optimizer</h1>
+		<p>Standalone PHP optimizer for JPG/PNG images on your site. It using Google PageSpeed to grab images reduced in size, but lossless in quality, for speed up your web-site loading, without long finding and renaming each file manually. Also was spotted bug in Google PageSpeed which reduce some images resolution. But Image Optimizer will take care that your pictures remain intact.</p>
+		<h2>Installation</h2>
+		<ol>
+			<li>Extract "optimg" folder on your site root folder</li>
+			<li>Set up password in file "config.php"</li>
+			<li>Open "http://your-site.com/optimg" in your browser and enter password set in step 2</li>
+			<li>Write full web-site page URL (domain must be equal with domain in browser)
+				<br>or folder on site (must starts with slash &quot;/&quot;). Examples:
+				<ul>
+					<li>http://your-site.ru</li>
+					<li>http://your-site.ru/contacts</li>
+					<li>http://your-site.ru/news/hello-world.html</li>
+					<li>/images</li>
+					<li>/templates/site_front/img/</li>
+					<li>/assets/components/phpthumbof/cache</li>
+				</ul>
+			</li>
+			<li>Press green button or press "Enter"</li>
+			<li>Done. Check for results in console!</li>
+		</ol>
+		<h2>Download</h2>
+		<p><a href="https://github.com/NDruce/ImageOptimizer/archive/master.zip" class="btn btn-success">Download from GitHub</a></p>
+	</div>
+
+	
+	<div class="footer">
+		<div class="container">
+			NDruce Image Optimizer (c) 2017
+		</div>
+	</div>
+
+	<!-- IE fixes -->
+	<!--[if lt IE 9]>
+	<script src="../optimg/assets/js/ie/html5shiv.min.js"></script>
+	<script src="../optimg/assets/js/ie/selectivizr.min.js"></script>
+	<script src="../optimg/assets/js/ie/respond.min.js"></script>
+	<script src="../optimg/assets/js/ie/ie.min.js"></script>
+	<![endif]-->
+
+	<!-- jQuery & Bootstrap -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>

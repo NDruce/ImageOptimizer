@@ -13,6 +13,16 @@
 		<div class="row">
 			<div class="col-sm-6">
 				<p><img src="http://img.freeflagicons.com/thumb/speech_bubble_icon/united_states_of_america/united_states_of_america_64.png" alt="English" class="pull-left">Standalone PHP optimizer for JPG/PNG images on your site. It using Google PageSpeed to grab images reduced in size, but lossless in quality, for speed up your web-site loading, without long finding and renaming each file manually. Also was spotted bug in Google PageSpeed which reduce some images resolution. But Image Optimizer will take care that your pictures remain intact.</p>
+				<p>Minuses when you optimize images via Google PageSpeed manually (without this script):</p>
+				<ol>
+					<li>All images adding up in one folder, so you have to find source folder long time for each image</li>
+					<li>Image files are renamed. All &quot;wrong&quot; characters are encoding, for example "hello, (world).jpg" will be named as "hello_2C_20_28world_29.jpg", so you have to find original image and then rename optimized</li>
+					<li>If file name length is bigger than 64 characters, it will be trimmed</li>
+					<li>If image already was optimized, Google will start reduce it in sizes (resolution)</li>
+				</ol>
+				<p>NDruce Image Optimizer успешно решает все вышепереречисленные казусы, а также ускоряет и упрощает весь процесс оптимизации.</p>
+				<h2>Requirements</h2>
+				<p>PHP 5.4+ with cURL library installed</p>
 				<h2>Installation</h2>
 				<ol>
 					<li>Extract &quot;optimg&quot; folder on your site root folder</li>
@@ -33,10 +43,20 @@
 					<li>Done. Check for results in console!</li>
 				</ol>
 				<h2>Download</h2>
-				<p><a href="https://github.com/NDruce/ImageOptimizer/archive/master.zip" class="btn btn-success">Download from GitHub</a></p>
+				<p><a href="https://github.com/NDruce/ImageOptimizer/archive/master.zip" class="btn btn-success"><span class="glyphicon glyphicon-download" aria-hidden="true"></span> Download from GitHub</a></p>
 			</div>
 			<div class="col-sm-6">
-				<p><img src="http://img.freeflagicons.com/thumb/speech_bubble_icon/russia/russia_64.png" alt="Русский" class="pull-left">Самостоятельный PHP скрипт для оптимизации JPG/PNG изображений на вашем сайте. Он забирает сервисом Google PageSpeed изображения уменьшенные в весе, но без потери качества, для того чтобы ваш сайт загружался быстрее, и не нужно было искать и заменять каждую картинку после их оптимизации, а потом еще переименовывать (т.к. Google обрезает имя файла до 64 символов и заменяет множество символов своими, в т.ч. русские буквы). Также был замечен бан в Google PageSpeed, который иногда изменяет и разрешение самих картинок. Но пользуясь Image Optimizer, вы отгородитесь от ненужных проблем и лишних забот, сохранив время.</p>
+				<p><img src="http://img.freeflagicons.com/thumb/speech_bubble_icon/russia/russia_64.png" alt="Русский" class="pull-left">Скрипт для оптимизации JPG/PNG изображений на вашем сайте без потери качества через Google PageSpeed Insights. Оптимизация нужна для того, чтобы ваш сайт загружался быстрее, и не нужно было самому искать и заменять каждую картинку, что приходится делать при оптимизации вручную. А потом еще переименовывать в оригинальное название файла. Пользуясь Image Optimizer, вы отгородитесь от ненужных проблем и лишних забот, сохранив себе время.</p>
+				<p>Минусы Google PageSpeed при ручной оптимизации изображений (без данного скрипта):</p>
+				<ol>
+					<li>Все изображения складываются в одну папку, из-за чего приходится долго искать исходную папку каждого из них</li>
+					<li>Файлы изображений переименовываются. Все &quot;некорректные&quot; символы кодируются в группы других, например "hello, (world).jpg" в "hello_2C_20_28world_29.jpg", из-за чего приходится еще искать оригинальное изображение, а потом переименовывать оптимизированное</li>
+					<li>Если длина названия файла больше 64-х символов, то оно обрезается</li>
+					<li>Если изображение уже было оптимизировано, Google начинает уменьшать его размеры (разрешение)</li>
+				</ol>
+				<p>NDruce Image Optimizer успешно решает все вышепереречисленные казусы, а также ускоряет и упрощает весь процесс оптимизации.</p>
+				<h2>Требования</h2>
+				<p>PHP 5.4+ с установленной библиотекой cURL</p>
 				<h2>Установка</h2>
 				<ol>
 					<li>Распакуйте папку &quot;optimg&quot; в корень вашего сайта</li>
@@ -58,11 +78,11 @@
 					<li>Готово. Результаты отобразятся в консоли!</li>
 				</ol>
 				<h2>Скачать</h2>
-				<p><a href="https://github.com/NDruce/ImageOptimizer/archive/master.zip" class="btn btn-success">Скачать с GitHub</a></p>
+				<p><a href="https://github.com/NDruce/ImageOptimizer/archive/master.zip" class="btn btn-success"><span class="glyphicon glyphicon-download" aria-hidden="true"></span> Скачать с GitHub</a></p>
 			</div>
 			<div class="col-sm-4"></div>
 			<div class="col-sm-8 donation">
-				<br><h2>Donation/Донат</h2><br>
+				<br><h2><span class="glyphicon glyphicon-piggy-bank" aria-hidden="true"></span> Donation/Донат</h2><br>
 				<p><img src="img/wmr36.png" width="18" align="absmiddle"> <b>WMR:</b> R202232326285</p>
 				<p><img src="img/wmz36.png" width="18" align="absmiddle"> <b>WMZ:</b> Z182644074410</p>
 				<p><img src="img/wmb36.png" width="18" align="absmiddle"> <b>WMB:</b> B217294161390</p>
@@ -82,6 +102,7 @@
 	<div class="footer">
 		<div class="container">
 			NDruce Image Optimizer (c) 2017
+			<a href="https://github.com/NDruce/ImageOptimizer" class="pull-right">GitHub &raquo;</a>
 		</div>
 	</div>
 

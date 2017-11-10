@@ -6,51 +6,108 @@
 	<meta name="viewport" content="width=device-width">
 	<title>NDruce Image Optimizer</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css">
-	<link rel="stylesheet" href="../optimg/assets/css/style.css" type="text/css">
 </head>
 <body>
 	<div class="container margin-top">
 		<h1>NDruce Image Optimizer</h1>
-		<p>Standalone PHP optimizer for JPG/PNG images on your site. It using Google PageSpeed to grab images reduced in size, but lossless in quality, for speed up your web-site loading, without long finding and renaming each file manually. Also was spotted bug in Google PageSpeed which reduce some images resolution. But Image Optimizer will take care that your pictures remain intact.</p>
-		<h2>Installation</h2>
-		<ol>
-			<li>Extract "optimg" folder on your site root folder</li>
-			<li>Set up password in file "config.php"</li>
-			<li>Open "http://your-site.com/optimg" in your browser and enter password set in step 2</li>
-			<li>Write full web-site page URL (domain must be equal with domain in browser)
-				<br>or folder on site (must starts with slash &quot;/&quot;). Examples:
-				<ul>
-					<li>http://your-site.ru</li>
-					<li>http://your-site.ru/contacts</li>
-					<li>http://your-site.ru/news/hello-world.html</li>
-					<li>/images</li>
-					<li>/templates/site_front/img/</li>
-					<li>/assets/components/phpthumbof/cache</li>
-				</ul>
-			</li>
-			<li>Press green button or press "Enter"</li>
-			<li>Done. Check for results in console!</li>
-		</ol>
-		<h2>Download</h2>
-		<p><a href="https://github.com/NDruce/ImageOptimizer/archive/master.zip" class="btn btn-success">Download from GitHub</a></p>
+		<div class="row">
+			<div class="col-sm-6">
+				<p>Standalone PHP optimizer for JPG/PNG images on your site. It using Google PageSpeed to grab images reduced in size, but lossless in quality, for speed up your web-site loading, without long finding and renaming each file manually. Also was spotted bug in Google PageSpeed which reduce some images resolution. But Image Optimizer will take care that your pictures remain intact.</p>
+				<h2>Installation</h2>
+				<ol>
+					<li>Extract &quot;optimg&quot; folder on your site root folder</li>
+					<li>Set up password in file &quot;config.php&quot;</li>
+					<li>Open &quot;http://your-site.com/optimg&quot; in your browser and enter password set in step 2</li>
+					<li>Write full web-site page URL (domain must be equal with domain in browser)
+						<br>or folder on site (must starts with slash &quot;/&quot;). Examples:
+						<ul>
+							<li>http://your-site.com</li>
+							<li>http://your-site.com/contacts</li>
+							<li>http://your-site.com/news/hello-world.html</li>
+							<li>/images</li>
+							<li>/templates/site_front/img/</li>
+							<li>/assets/components/phpthumbof/cache</li>
+						</ul>
+					</li>
+					<li>Press green button or press &quot;Enter&quot;</li>
+					<li>Done. Check for results in console!</li>
+				</ol>
+				<h2>Download</h2>
+				<p><a href="https://github.com/NDruce/ImageOptimizer/archive/master.zip" class="btn btn-success">Download from GitHub</a></p>
+			</div>
+			<div class="col-sm-6">
+				<p>Самостоятельный PHP скрипт для оптимизации JPG/PNG изображений на вашем сайте. Он забирает сервисом Google PageSpeed изображения уменьшенные в весе, но без потери качества, для того чтобы ваш сайт загружался быстрее, и не нужно было искать и заменять каждую картинку после их оптимизации, а потом еще переименовывать (т.к. Google обрезает имя файла до 64 символов и заменяет множество символов своими, в т.ч. русские буквы). Также был замечен бан в Google PageSpeed, который иногда изменяет и разрешение самих картинок. Но пользуясь Image Optimizer, вы отгородитесь от ненужных проблем и лишних забот, сохранив время.</p>
+				<h2>Установка</h2>
+				<ol>
+					<li>Распакуйте папку &quot;optimg&quot; в корень вашего сайта</li>
+					<li>Задайте пароль в файле "config.php"</li>
+					<li>Поменяйте там же значение &quot;lang&quot; с &quot;en&quot; на &quot;ru&quot;</li>
+					<li>Откройте &quot;http://ваш-сайт.ru/optimg&quot; в своем браузере и введите пароль, заданный в шаге 2</li>
+					<li>Введите полный URL страницы сайта (домен должен совпадать с доменом в адресной строке браузера)
+						<br>или путь к папке на сервере (должен начинаться со слеша &quot;/&quot;). Примеры:
+						<ul>
+							<li>http://ваш-сайт.ru</li>
+							<li>http://ваш-сайт.ru/contacts</li>
+							<li>http://ваш-сайт.ru/news/hello-world.html</li>
+							<li>/images</li>
+							<li>/templates/site_front/img/</li>
+							<li>/assets/components/phpthumbof/cache</li>
+						</ul>
+					</li>
+					<li>Нажмите зеленую кнопку (или &quot;Enter&quot; на клавиатуре)</li>
+					<li>Готово. Результаты отобразятся в консоли!</li>
+				</ol>
+				<h2>Скачать</h2>
+				<p><a href="https://github.com/NDruce/ImageOptimizer/archive/master.zip" class="btn btn-success">Скачать с GitHub</a></p>
+			</div>
+		</div>
 	</div>
 
-	
 	<div class="footer">
 		<div class="container">
 			NDruce Image Optimizer (c) 2017
 		</div>
 	</div>
 
-	<!-- IE fixes -->
-	<!--[if lt IE 9]>
-	<script src="../optimg/assets/js/ie/html5shiv.min.js"></script>
-	<script src="../optimg/assets/js/ie/selectivizr.min.js"></script>
-	<script src="../optimg/assets/js/ie/respond.min.js"></script>
-	<script src="../optimg/assets/js/ie/ie.min.js"></script>
-	<![endif]-->
+	<style type="text/css">
+		html, body { height: 100%; }
 
-	<!-- jQuery & Bootstrap -->
+		html {
+			position: relative;
+			min-height: 100%;
+		}
+
+		body {
+			font-family: "Helvetica Neue", Arial, sans-serif;
+			font-size: 16px;
+			min-width: 300px;
+			overflow-x: hidden;
+			padding-bottom: 32px;
+		}
+
+		a {
+			transition: all .3s ease-out;
+		}
+
+		a:hover, a:focus {
+			text-decoration: none;
+		}
+
+		.margin-top {
+			padding-top: 40px;
+		}
+
+		.footer {
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			height: 32px;
+			background-color: #f8f8f8;
+			color: #999;
+			padding: 6px 0;
+		}
+	</style>
+
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 </html>

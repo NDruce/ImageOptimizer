@@ -73,7 +73,7 @@ if (isset($_POST['pass']) && !isset($_SESSION['optimg'])) {
 
 	<div class="footer">
 		<div class="container">
-			NDruce Image Optimizer (c) 2017
+			<a href="https://ndruce.github.io/ImageOptimizer/">NDruce Image Optimizer</a> (c) 2017
 			<?php if (isset($_SESSION['optimg'])) echo '<a href="?logout" class="pull-right">'.$lang['logout'].'</a>'; ?>
 		</div>
 	</div>

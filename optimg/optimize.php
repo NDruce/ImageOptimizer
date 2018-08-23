@@ -19,7 +19,8 @@ if (!file_exists(GPS.'/temp')) mkdir(GPS.'/temp', 0777, true);
 
 $url = trim(urldecode($_POST['url']));
 $relative = substr($url, 0, 1) == '/';
-$host = 'http://'.$_SERVER['HTTP_HOST'];
+//$host = 'http://'.$_SERVER['HTTP_HOST'];
+$host = (startsWith($url, 'https://') ? 'https://' : 'http://').$_SERVER['HTTP_HOST'];
 if (!$relative && !startsWith($url, $host)) { echo $lang['wronghost'].'<br>'; return; }
 $path = GPS.'/temp/'.str_replace('.', '-', microtime(true));
 $arch = $path.'.zip';
